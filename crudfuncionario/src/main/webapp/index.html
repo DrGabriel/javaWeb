@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="pt-BR">
+	<head>
+		<title>Prova Metatron - Cadastro Usuário</title>
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+		<!-- jQuery library -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+
+		<!-- Latest compiled JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+	</head>
+	<body class="container-fluid ">
+		<h1>Usuários</h1>
+		<div class="container">
+				<div id="mensagemProcessamento" class="alert alert-info hidden" role="alert">
+			    </div>
+			<div class="row">
+				<div class="col-12 col-md-6">
+
+					<h2 class="text-center">Cadastro de usuários</h2>
+					<div id="mensagemCadastro" class="alert alert-info hidden" role="alert"></div>
+					<form id="formCadastro">
+						<div class="form-group">
+							<label for="nomeUsuarioCadastro">Nome do usuário</label>
+							<input required type="text"  class="form-control"  id="nomeUsuarioCadastro"placeholder="Nome"> 
+						</div>
+						<div class="form-group">
+							<label for="nomeCargoCadastro">Cargo</label>
+							<input required type="text" class="form-control" id="nomeCargoCadastro" placeholder="Cargo">
+						</div>
+						<div class="form-group">
+							<label for="dddTelefone">DDD telefone</label>
+							<input required  pattern="(.){3,3}" maxlength="3" class="form-control" id="dddTelefone" placeholder="DDD telefone">
+						</div>
+						<div class="form-group">
+							<label for="numeroTelefone">Número telefone</label>
+							<input required  class="form-control" id="numeroTelefone" maxlength="9" placeholder="Número telefone">
+						</div>
+						<div class="text-center">
+							<button type='button' id="cadastrar" class="btn btn-primary text-center">Cadastrar</button>
+						</div>
+					</form>
+				</div>
+				<div class="col-12 col-md-6">
+					<h2 class="text-center">Pesquisa de usuários</h2>
+					<div id="mensagemBusca" class="alert alert-info hidden" role="alert">
+		
+					</div>
+					<form id="formulario">
+						<div class="form-group">
+							<label for="nomeUsuario">Nome do usuário</label>
+							<input type="text"  class="form-control"  id="nomeUsuario"placeholder="Nome"> 
+						</div>
+						<div class="form-group">
+							<label for="nomeCargo">Cargo</label>
+							<input type="text" class="form-control" id="nomeCargo" placeholder="Cargo">
+						</div>
+						<div class="text-center">
+							<button type='button' id="pesquisar" class="btn btn-primary text-center">Pesquisar</button>
+							<button type='button' id="limpar" class="btn btn-secondary text-center">Limpar pesquisa</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+
+		<div >
+			<h2 class="text-center">Lista de usuários</h2>
+			<div id="mensagemResultado" class="alert alert-success text-center" role="alert">
+			</div>
+			<table class="table">
+				<thead>
+				<tr>
+					<th scope="col">#</th>
+					<th scope="col">Nome</th>
+					<th scope="col">Cargo</th>
+					<th scope="col">Telefone</th>
+				</tr>
+				</thead>
+				<tbody>
+				</tbody>
+			</table>
+		</div>
+		<script src="./js/listagem.js"></script>
+		<script src="./js/cadastro.js"></script>
+		
+	</body>
+</html>

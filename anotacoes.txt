@@ -1,0 +1,20 @@
+
+                                                Informações mais relevantes
+
+-Projeto feito utilizando servidor tomcat 8.5
+
+-Banco de dados mysql versão 5.7
+
+-Criar banco e popular a partir do script "constroiBanco.sql"
+-Usuario e senha utilizado na configuração do hibernate : usuario: root , senha:toor
+
+-acesso através: http://localhost:8080/usuarios/
+
+-Uso de bootsrap 3.4 para estilização
+
+-Compatibilidade testada nos navegadores: chrome-última versão, firefox-última versão, edge-ultima versão
+não funciona no navegador do eclipse.
+
+-Do crud foi implementado apenas o create e o read
+
+
